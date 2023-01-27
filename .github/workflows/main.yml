@@ -32,3 +32,6 @@ jobs:
     - name: Output coverage
       run: |
         poetry run coverage report
+            - name: Upload coverage reports to Codecov
+    - name: Upload coverage
+      uses: codecov/codecov-action@v3
