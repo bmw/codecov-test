@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "codecov-test"
+version = "0.1.0"
+description = "Experimenting with what seems to me like strange behavior from codecov."
+authors = ["Brad Warren <bmw@eff.org>"]
+readme = "README.md"
+packages = [{include = "codecov_test"}]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+coverage = "^7.1.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.1"
+pytest-cov = "^4.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
